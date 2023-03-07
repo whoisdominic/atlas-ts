@@ -1,12 +1,13 @@
-import chalk from "chalk";
+import { Trie } from "./structures/Trie";
 
 export function main() {
-  console.log(chalk.blue("Hello boiler 😉"));
-  console.log(
-    chalk.magenta(
-      "This is a basic TS node boilderplate\nI'll be using this in a lot of my projects!"
-    )
-  );
+  const trie = new Trie();
+  trie.insert("apple");
+  trie.insert("car");
+  trie.insert("cheese");
+  trie.insert("child");
+  trie.insert("zaytoven");
+  console.log(trie);
 
   return 0;
 }
